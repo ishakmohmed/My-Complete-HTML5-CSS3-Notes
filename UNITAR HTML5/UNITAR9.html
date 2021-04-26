@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      h1 {
+        display: inline-block;
+        /* ^ DUUUDE, I REMEMBER FROM SMILGA'S FILE THAT INLINE ONLY ADD MARGIN TO LEFT AND RIGHT, SO TO FIX THAT, MAKE IT INLINE-BLOCK! */
+        background-color: yellow;
+        font-size: 3rem;
+        position: relative;
+        z-index: -100;
+        top: 200px;
+        left: 200px;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+
+      #hug {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        z-index: 3;
+      }
+
+      #stare {
+        position: absolute;
+        top: 45px;
+        left: 45px;
+        z-index: 4;
+      }
+
+      #celebrate {
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        z-index: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>Everything About Manchester United</h1>
+      <br />
+      <br />
+      <img src="./1.jpg" id="hug" width="300" alt="img can't be displaed" />
+      <img src="./2.jpg" id="stare" width="355" alt="img can't be displayed" />
+      <img
+        src="./3.jpg"
+        id="celebrate"
+        width="355"
+        alt="img can't be displayed"
+      />
+    </center>
+  </body>
+</html>

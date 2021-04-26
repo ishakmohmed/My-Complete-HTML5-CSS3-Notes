@@ -1,0 +1,43 @@
+.one {
+  line-height: 1.5em;
+  letter-spacing: 5px;
+  word-spacing: 20px;
+  text-transform: uppercase;
+}
+/* em is relative to the font-size of its direct or nearest parent, rem is only relative to the html (root) font-size.  */
+a {
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.two {
+  font-size: 4rem;
+  background: red;
+  padding: 50px 100px;
+  /* ^^^ topbottom, leftright */
+  /* YOU CAN ALSO USE 1 PADDING VALUE for all sides */
+  padding: 50px 100px 150px 200px;
+  /* ^^^ top, right, bottom, left (same for margin)*/
+  /* NOTE: PADDING- USE IT LIKE MARGIN */
+  border-style: solid;
+  border-width: 10px;
+  border-color: yellow;
+  border: 25px solid green;
+  border-left-style: dotted;
+  border-left-width: brown;
+  border-left-color: black;
+  border-radius: 30px;
+  margin-top: -30px;
+  cursor: pointer;
+  /* outline is similar with border */
+  outline-style: dotted;
+  outline-width: 0.2rem;
+  outline-color: purple;
+  outline-offset: -10px;
+  /* FCC GUY: ADVANTAGE OF OUTLINE > BORDER- OUTLINE HAS OFFSET (+-)*/
+}
+/* OUTLINE DOESNT PUSH STUFFS(UNLESS YOU ADD MARGIN TO IT), BUT BORDERS DO */
+
+/* Note: Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline. */
+
+/* https://i.stack.imgur.com/Q6J6n.png */

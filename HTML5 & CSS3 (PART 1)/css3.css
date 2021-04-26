@@ -1,0 +1,18 @@
+body {
+  font-family: monospace;
+  line-height: 1.5em;
+  border: 3px solid black;
+  background: rgb(1, 100, 33);
+  font-size: 60px;
+  height: 100px;
+  width: 100px;
+  /* px is absolute size (opposite is relative size)*/
+}
+
+p{
+  background: rgba(255, 70, 70, 0.8);
+  /* rgba, 0.8 means pretty strong, 0 is completely transpaerent, 1 is completely solid */
+  color: #ff0000;
+}
+
+/* REMEMBER: THERE'S ALSO * = (UNIVERSAL) SELECTOR, BUT IT'S THE MOST EASILY OVERWRITEABLE */

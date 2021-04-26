@@ -1,0 +1,25 @@
+.outer {
+  width: 500px;
+  height: 500px;
+  background: blue;
+}
+
+.inner {
+  width: 90%;
+  height: 90%;
+  background: #ff0000;
+}
+
+.relative {
+  font-size: 2em;
+}
+/* 1em=16px default browser style */
+/* REM- don't depend on parent, but the root of the document(html) */
+
+.absolute {
+  font-size: 32px;
+}
+
+html {
+  font-size: 32px;
+}

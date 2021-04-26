@@ -1,0 +1,43 @@
+div {
+  width: 70vw;
+  margin: 100px auto;
+  border: 2px solid red;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  /* 100% of nearest parent element */
+  display: block;
+  /* ^ I set div's height to Xvh and set this height to 100% and it removed the unnecessary space in height, BUT guy from fcc made this inline image element to block (btw the div which contains this image is block) and settled the issue*/
+  /* BASICALLY DISPLAY BLOCK IS A BETTER WAY TO GO */
+}
+
+img::before {
+  content: "hello";
+}
+/*  YOU CANT ADD PSEUDO ELEMENTS BEFORE/AFTER IMAGE BECAUSE IMAGE IS ALREADY THE CONTENT*/
+div::before {
+  content: "";
+  border: 2px solid blue;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  top: -40px;
+  left: -40px;
+  z-index: -232;
+}
+/* IN PSEUDO ELEMENT, SAY, FOR EXAMPLE div::before- its ancestor is div - ALTHOUGH  THE PSEUDO ELEMENT IS BEFORE (OR AFTER) and not a descendant*/
+
+div::after {
+  content: "";
+  background: grey;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  top: -20px;
+  left: -20px;
+  z-index: -200;
+}

@@ -1,0 +1,31 @@
+a {
+  font-size: 60px;
+  background: red;
+  margin: 20px;
+  /* for inline elements, margin is only added for leftright- to solve, you can use display: inline-block*/
+  display: inline-block;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+  width: 200px;
+  height: 200px;
+  color: white;
+}
+/* OMG, PADDING IS THE BAD GUY (UNLESS YOU OVERRIDE USING box-sizing: border-box)! it doesnt keep the eleemt to its size, instead it adds whatever NOpixels/other units that you add */
+
+.box-1 {
+  background: red;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.box-2 {
+  background: blue;
+  padding: 20px;
+}
+.box-3 {
+  background: green;
+  padding: 20px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,48 @@
+body {
+  background-color: yellow;
+}
+
+.banner {
+  background-color: blue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 576px) {
+  /* ^^^ starting from min-width 576px, below is gonna happen- either new stuffs gonna happen or stuffs are gonna be override*/
+
+  /* if you use max-width, it means up to that point do this, if no execute the thing that you defined outside of @media by default */
+  body {
+    background: red;
+  }
+  .banner {
+    background: yellow;
+  }
+  .h1 {
+    color: black;
+    font-size: 60px;
+  }
+}
+
+/* IMPORTANT ############################ LETS SAY YOUVE GOT MAX WIDTH OF 500PX AND 1000PX, SO OBVIOSULY 1000PX IS GONNA BE CHOSEN AND 1000PX WILL OVERRIDE AS MUCH AS IT CAN, BUT BUT BUT BUT BUT BUT BUT IF THERE ARE SOME ELEMENTS IN 500PX THAT IS NOT IN 1000PX, 1000PX CANNOT OVERRIDE IT, SO ALTHOUGH 1000PX IS CHOSEN, THE LEFT OUT ELEMENTS IN 500PX WILL BE EXECUTED TOO */
+
+/* @media screen and (min-width: 768px) {
+
+  body {
+    background:green;
+  }
+  .banner {
+    background:blue;
+  }
+  .h1 {
+    color: red;
+    font-size: 60px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+} */

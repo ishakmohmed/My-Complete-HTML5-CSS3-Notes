@@ -1,0 +1,17 @@
+:root {
+  background: lightgrey;
+  font-size: 150%;
+}
+/* root is like the main thing, and when you target it, then you can change the main font size, etc... */
+
+h1 {
+  font-size: 3rem;
+}
+
+.absolute {
+  font-size: 24px;
+}
+
+.reponsive {
+  font-size: 1.5rem;
+}

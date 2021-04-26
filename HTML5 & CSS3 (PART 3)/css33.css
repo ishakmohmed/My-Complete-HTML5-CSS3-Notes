@@ -1,0 +1,9 @@
+.fa-ad {
+  color: green;
+}
+
+.social-icon {
+  font-size: 4rem;
+  /* ^^ this thing enlarged the facebook icon */
+  color: blue;
+}

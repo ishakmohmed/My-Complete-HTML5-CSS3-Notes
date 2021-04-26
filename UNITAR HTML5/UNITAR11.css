@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* for below im targetting each website individually */
+.nav ul li {
+  background-color: crimson;
+  border-radius: 10px;
+  float: left;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  /* for below, when I did position relative, the drop down menu came infront of the text */
+  position: relative;
+}
+
+.nav ul li ul li {
+  visibility: hidden;
+}
+
+.nav ul li:hover ul li {
+  visibility: visible;
+}
+
+.nav ul li:hover {
+  background-color: yellow;
+}
+
+.content {
+  clear: both;
+  background-color: greenyellow;
+  border-radius: 15px;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.content2 {
+  background-color: palevioletred;
+  border-radius: 15px;
+  float: right;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}

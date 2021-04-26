@@ -1,0 +1,32 @@
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+div:hover {
+  background: yellow;
+  /* From my observation ^ you only need to activate (refer .three:hover{) when you're transitioning... ^^^ This is not a transition cause it changes instantly... TRUST ME ON THIS ONE PLEASE */
+  /* OK LISTEN, FOR NOW ITS NOT A TRANSITION, BUT YOU CAN ALWAYS MAKE IT A TRANSITION BY ACTIVATING IT in transition-property with the transition-duration */
+}
+
+.one {
+  background: red;
+}
+
+.two {
+  background: blue;
+}
+
+.three {
+  background: purple;
+  transition-property: border-radius, background;
+  transition-duration: 1s, 5s;
+  /* ^^^ First is for border-radius, 2nd is for background... */
+  transition-delay: 1s;
+}
+
+.three:hover {
+  border-radius: 50%;
+  /* YOU ^ KINDA NEEDA ACTIVATE THIS IN .three{, and not in .three:hover{... Anyway you do specify what happens when you hover over .three here (.three:hover) but activation always takes place in the main .hover */
+}

@@ -1,0 +1,17 @@
+h1{
+  text-shadow: 10px 10px 3px red;
+  /* ^^^ x-axis, y-axis, blur, colour */
+  /* THERES ONLINE TEXT-SHADOW GENERATOR */
+}
+
+.box{
+  width: 200px;
+  height: 100px;
+  background: blue;
+  margin: 20px;
+  box-shadow: 3px 5px 5px green;
+  /* ^^^works just like text-shadow */
+  /* THERES ONLINE BOX SHADOW GENERATOR */
+}
+
+/* #####YOU CAN ALSO MAKE A BOX-SHADOW/TEXT-SHADOW WHEN YOU HOVER OVER THOSE ELEMENTS */

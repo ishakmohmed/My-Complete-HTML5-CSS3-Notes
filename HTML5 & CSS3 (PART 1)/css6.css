@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  /* above is font stack, last one is generic font */
+  text-indent: 50px;
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+  font-weight: bolder;
+  font-style: oblique;
+  text-align: center;
+}

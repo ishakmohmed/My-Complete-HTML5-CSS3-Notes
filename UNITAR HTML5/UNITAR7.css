@@ -1,0 +1,15 @@
+h1 {
+  text-align: center;
+}
+
+h1 {
+  background-image: url(./SmallTradingAccount-935x526.jpg);
+  background-attachment: fixed;
+  /* ^^^ fixed is the unusual one */
+  /* ^^^ there's also scroll */
+  background-repeat: repeat-x;
+  background-size: cover;
+  /* ^^ contain is the opposite of cover where it stretches fully but not if any single pixel isnt shown, plus theres repetition so the 2nd pic is not shown fully I GUESSS, I GUESS, I GUESS I REMEMBERED FROM SMILGA'S HTML file! */
+  background-position: bottom;
+  height: 60vh;
+}

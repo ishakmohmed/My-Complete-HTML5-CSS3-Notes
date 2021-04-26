@@ -1,0 +1,31 @@
+body {
+  display: flex;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+
+.one {
+  background: linear-gradient(yellow, pink);
+  /* by default, linear-gradient from top to bottom */
+}
+
+.two {
+  background: linear-gradient(to top, green, orange, pink);
+}
+
+.three {
+  background: linear-gradient(90deg, black, blue);
+  /* VERY IMPORTANT, ^^^ FROM BOTTOM > CLOCKWISE  &&&&&&& 90deg not 90 deg (there shouldn't be any space)*/
+}
+
+.four {
+  background: linear-gradient(to top left, orange, red);
+}
+
+.five {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+}

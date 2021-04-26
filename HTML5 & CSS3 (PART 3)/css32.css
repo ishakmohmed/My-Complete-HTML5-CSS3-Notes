@@ -1,0 +1,30 @@
+:root {
+  /* ok here youre targetting the main thing which is :root, but you can always target a specific div or something like i did down there */
+  /* new disvoery, i guess this is how it works, * selects all elements, :root/html is like by default */
+  --primaryColor: #1313fa;
+  /* ^--primaryColor is a variable (but you do need -- in front of the variable */
+  --secondaryColor: #f15025;
+  --mainTransition: all 0.4s linear;
+}
+
+.heading {
+  color: var(--primaryColor);
+}
+
+.second-heading {
+  color: var(--primaryColor);
+  transition: var(--mainTransition);
+}
+
+.second-heading:hover {
+  color: var(--secondaryColor);
+}
+/* ################################# */
+
+div {
+  --primaryRed: red;
+}
+
+.main-text {
+  color: var(--primaryRed);
+}

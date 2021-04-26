@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+  <head>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form autocomplete="on" action="" method="" name="" target="">
+      <!-- ^^^ FOR AUTOCOMPLETE, only works if name or id of input element is specified -->
+      <fieldset>
+        THIS IS A SUBMIT >>> <input type="submit"> <br><br>
+        THIS IS A BUTTON >>> <input type="button">
+        <legend>MY PERSONAL DATA</legend>
+        Name: <input type="text" placeholder="John Smith" id="AUTOCOMPLETEHEHE"/> <br /><br />
+        AnotherNameforDatalist: <input list="names">
+        <datalist id="names">
+          <option value="mane">
+          <option value="firmino">
+          <option value="salah">
+        </datalist> <br><br>
+        Password: <input type="password" /><br /><br />
+        Age: <input type="number" /> <br /><br />
+        Gender:<input type="radio" name="uniquegender" checked="checked" />Male
+        <input type="radio"  name="uniquegender"/>Female <br /><br />
+
+        <label for="">I GUESS THIS IS THE RIGHT WAY TO LABEL<input type="text"><label><br><br>
+      </fieldset>
+
+      <textarea name="" id="" cols="80" rows="10">hello</textarea> <br /><br />Select your favorite sports:
+      <select name="sports" id="" size="5" multiple>
+        <option value="">select</option>
+        <option selected="selected" value="">FOOTBALL</option>
+        <option value="">AMERICAN FOOTBALL</option>
+      </select><br /><br />
+
+      Do you have any of these pets:<input type="checkbox" />DOG <input type="checkbox" />CAT <br /><br />
+      Email: <input type="email" placeholder="name@domain.com" /> <br /><br />
+      Month:<input type="month"><br><br>
+      Time: <input type="time"><br><br>
+      Number:??? <input type="number" min="0" max="100" step="5" value="50"><br><br>
+      Color: <input type="color" autofocus/><br /><br />
+      Date: <input type="date" /> <br /><br />
+      DateTime: <input type="datetime" /><br /><br />
+      <!-- ^^ its like removed from modern browsers or something like that -->
+      datetim-local: <input type="datetime-local" /> <br /><br />
+      <!-- ^^ you can't datetime, but you can datetime-local -->
+      range: 0<input type="range" min="0" max="20" value="5"/> 20<br /><br />
+      <!-- DEFault RANGE IS 0 TILL 100 -->
+      telephone: <input type="tel" placeholder="01X- XXXXXXX" /> <br /><br />
+      url: <input type="url" placeholder="www.youtube.com" /> <br /><br />
+      TEL<input type="tel" required>
+      <input type="submit" value="submit" /> <br /><br />
+      <input type="reset" value="RREESSEEETTT" /> <br /><br />
+      WEEK:<input type="week"><br><br>
+    </form>
+
+
+    <audio controls>
+      <source src="./Mankatha Theme Music.mp3">
+        AUDIO ELEMENT IS NOT SUPPORTED BY YOUR BROWSER
+    </audio> <br /><br />
+    <video controls>
+      <source src="./my parallax particles.mov" type="video/mp4">
+        video element not supported byyour browser
+    </video> <br><br>
+  </body>
+</html>

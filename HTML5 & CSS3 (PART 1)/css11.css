@@ -1,0 +1,28 @@
+div {
+  background: blue;
+  margin: 10px;
+  color: whitesmoke;
+}
+
+.none {
+  display: none;
+  /* display: none- you cant even see it in devTools */
+}
+
+.opacity {
+  opacity: 1;
+}
+/* DEFAULT OPACITY IS 1(MAX). 0 is MIN. */
+/* IN SIMPLE WORDS, OPACITY IS HOW STRONG IT IS DISPLAYED */
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-5 {
+  opacity: 0.5;
+}
+
+.visibility {
+  visibility: hidden;
+}
+/* visibility: hidden- ofc its hidden but you can see it in devTools */

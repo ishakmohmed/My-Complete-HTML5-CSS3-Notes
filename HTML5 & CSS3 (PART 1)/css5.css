@@ -1,0 +1,27 @@
+.banner1{
+  width: 50vw;
+  height: 50vh;
+  background-color: red;
+}
+
+.header{
+  width: 50vw;
+  height: 50vw;
+  background-color: purple;
+}
+
+*{
+  margin: 0;
+}
+
+.navbar{
+  background: blue;
+  height: 100px;
+  color: yellow;
+  font-size: 3rem;
+}
+
+.banner{
+  background: red;
+  min-height: calc(100vh - 100px); 
+}

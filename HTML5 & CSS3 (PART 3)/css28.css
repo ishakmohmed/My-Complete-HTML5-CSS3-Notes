@@ -1,0 +1,25 @@
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+.one {
+  background-color: red;
+}
+
+.two {
+  background-color: green;
+}
+
+.three {
+  background-color: blue;
+  transition: background 3s 2s, border-radius 3s 2s;
+  /* ^^^ shortcut (combine transition-property, transition-duration, and transition-delay): bacground, transition-duration, transition-delay */
+  /* ^^^ THERES A SHORTCUT FOR ABOVE ShOrTcUt, instead of specifying background and border-radius separately, you can combine them by >>>>>>>>>> transition: all 3s 2s */
+}
+
+.three:hover {
+  border-radius: 50%;
+  background: coral;
+}

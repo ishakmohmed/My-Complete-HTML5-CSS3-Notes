@@ -1,0 +1,20 @@
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+/* ^THESE ARE CLASS SELECTORS */
+
+div {
+  color: brown;
+  background: yellow;
+}
+
+span {
+  color: yellow;
+  background: blue;
+  text-transform: capitalize;
+}

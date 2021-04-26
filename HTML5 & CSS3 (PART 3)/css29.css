@@ -1,0 +1,36 @@
+div {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  color: white;
+  margin: 15px;
+  transition: all 3s ease;
+  /* ^^^ default is ease (transition-timing-function), which is the the sme with ease-in-out, where >>> slow start, FAST, slow end */
+  /* ########################## */
+  /* linear: same speed start to end */
+}
+
+div:hover {
+  transform: translateX(500px);
+}
+
+.ease {
+  /* for below, you're overriding div- - but generally, you'd write something like >>> transition: all 2s ease */
+  transition-timing-function: ease;
+}
+
+.linear {
+  transition-timing-function: linear;
+}
+
+.ease-in {
+  transition-timing-function: ease-in;
+}
+
+.ease-out {
+  transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}

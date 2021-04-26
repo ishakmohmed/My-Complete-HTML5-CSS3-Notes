@@ -1,0 +1,18 @@
+div h1 {
+  color: red;
+}
+
+/* for below: it means the thing only applies for direct direct direct children */
+div > h1 {
+  color: green;
+}
+
+/* then things get overrode */
+.header h1 {
+  color: pink;
+}
+
+/* then things get overrode */
+.header > h1 {
+  color: purple;
+}

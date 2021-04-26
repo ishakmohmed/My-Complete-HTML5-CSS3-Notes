@@ -1,0 +1,42 @@
+button {
+  background: red;
+  font-size: 40px;
+  color: white;
+  position: fixed;
+  /* once ^ you make it fixed, its invisible because you made a grave sin of not specifying where you wanan fix it, if you do like below line, it comes to action.... of course, like the other position like relative, it goes the opposite way... From my observation, only the rockstar absolute doesnt confuse anyone and goes where you ask it to go! */
+  top: 100px;
+  left: 100px;
+  /* btw, guy from ffc has like this tecnique, where he specifies top:0 right:0 (not px or anything like that) and the element goes to the very top and then very right... needa remember this */
+}
+
+div {
+  border: 3px solid red;
+  background: yellow;
+  margin-top: 40px;
+  /* BY DEFAULT POSITION IS STATIC */
+  position: relative;
+  top: 200px;
+}
+
+.one {
+  background: blue;
+  /* position: relative;
+   relative is like opposite, move elements using top:, left:, etc 
+  top: 50px;
+ ^^^ you can also use rem, %, ...... */
+}
+
+.two {
+  background: green;
+  /* position: relative; */
+}
+
+/* INTRODUCTION TO POSITION ABSOLUTE (THE ROCKSSTAR)- IF PARENT ELEMENT OR ANCESTOR ELEMENT is RELATIVE you can  move if using top, left, etc- in that parent element (if theres no parent element, it takes the body) and now if you say top- it moves top and doesnt move the opposite like it is in the relative*/
+
+.special {
+  background: lightcoral;
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}

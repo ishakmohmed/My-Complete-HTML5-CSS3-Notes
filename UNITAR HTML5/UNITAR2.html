@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Maps</title>
+  </head>
+  <body>
+    <!-- FOR BELOW, # MEANS INTERNAL IMAGE MAPPING, BUT BUT BUT BUT BUT DONT DONT DONT DONT GET CONFUSED.... YOU NEED # SIGN FOR USEMAP REGARDLESS IF ITS A LOCAL IMAGE ON IMAGE FROM THE INTERNET, BASICALLY EVERY SINGLE TIME -->
+    <img src="./5vGu74n.jpg" alt="" usemap="#VERITHANAM" />
+    <!-- you can decalre the image anywhere, cause the usemap attribute will connect it to map tag. REMEMBER THE # after usemap= -->
+
+    <map name="VERITHANAM">
+      <area shape="default" coords="" href="https://youtube.com" alt="LOL" />
+      <!-- ^^^ no coordinate, default- entire region of picture -->
+      <area
+        shape="rect"
+        coords="110,4,245,81"
+        href="https://facebook.com"
+        alt="LOL"
+      />
+      <!-- ^^^ topLeft coordinate, bottomRight coordinate -->
+      <area
+        shape="circle"
+        coords="441,40,40"
+        href="https://google.com"
+        alt="LOL"
+      />
+      <!-- centreCoordinate, radiusSize -->
+      <area
+        shape="poly"
+        coords="555,0,597,31,582,83,528,81,512,31,555,0"
+        href="https://twitter.com"
+        alt="LOL"
+      />
+      <!-- ^^^ start from a coordinate, complete your shape, and come back to original coordinate -->
+    </map>
+  </body>
+</html>

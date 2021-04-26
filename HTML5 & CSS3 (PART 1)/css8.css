@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+}
+
+.block {
+  background: blue;
+  color: white;
+  width: 150px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+  /* ^ (topbottom, leftright) auto automatically puts it in the centre */
+}
+
+/* IMPORTANT############: margin-left: auto > pushes it all the way to right and vice versa. IF YOU HAVE BOTH MARGINLEFT AND MARGIN RIGHT SET TO AUTO, the thing stays at centre*/
+
+.inline {
+  background: red;
+  color: white;
+}
+
+/* block: ALWAYS STARTS AS A NEW LINE AND TAKES FULL WIDTH (unless you override it)*/
+
+/* inline: DOESNT START NEW LINE AND TAKE SPACE AS MUCH AS CONTENT SPACE */
+
+/* YOU CAN ALSO CHANGE THEM BY USING display: inline;, or display: block; */

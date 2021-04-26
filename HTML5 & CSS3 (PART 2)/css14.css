@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 60px;
+  color: orange;
+}
+
+.banner {
+  background: url("./big.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header {
+  /* BELOW IS 2 BACKGROUND IN ONE INSTANCE, WHICH IS LINEAR GRADIENT WITH THE PICTURE- WHATEVER YOU DECLARE FIRST IS ON TOP */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./big.jpg") center/cover no-repeat fixed;
+  /* center first, ^^^^only then cover (but you can mix up the other stuffs)!!!!!!!! */
+
+  /* I guess(trust me) after )bgposition/bgsize otherstuffs otherstuffs otherstuffs; */
+}
+
+.colorzilla {
+  min-height: 100vh;
+  background: #ff0000;
+  background: -moz-linear-gradient(
+    top,
+    #ff0000 0%,
+    #ff4c00 24%,
+    #ff356e 44%,
+    #ffbd07 64%,
+    #00ff11 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    #ff0000 0%,
+    #ff4c00 24%,
+    #ff356e 44%,
+    #ffbd07 64%,
+    #00ff11 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    #ff0000 0%,
+    #ff4c00 24%,
+    #ff356e 44%,
+    #ffbd07 64%,
+    #00ff11 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#00ff11',GradientType=0 );
+}

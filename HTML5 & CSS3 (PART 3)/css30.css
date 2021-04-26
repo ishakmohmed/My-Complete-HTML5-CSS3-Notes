@@ -1,0 +1,40 @@
+div {
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  color: white;
+}
+
+.transition {
+  background-color: red;
+  transition: all 2s linear;
+}
+
+.transition:hover {
+  background-color: yellow;
+  transform: translateX(100px);
+}
+
+.animation {
+  background-color: blue;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: 10;
+  /* shortcut would be >>> animation: move 5s infinite;*/
+}
+
+@keyframes move {
+  /* ^^^ MOVE HERE IS JUST A CUSTOM USER VARIABLE */
+  /* note: for below, 0% mean 0% of the animation-duration */
+  0% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(10px);
+    background-color: red;
+  }
+  100% {
+    transform: translateX(-20px);
+    background-color: green;
+  }
+}

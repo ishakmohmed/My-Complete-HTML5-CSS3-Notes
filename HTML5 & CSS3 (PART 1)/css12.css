@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  min-height: 100vh;
+  color: green;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  /* ^^^ fmi, leftright */
+  align-items: center;
+  /* fmi, topdown */
+}
+
+.big-img {
+  background: url("./bigsmall/big.jpg");
+  background-position: center;
+}
+
+.small-img {
+  background: url("./bigsmall/big.jpg");
+  background-repeat: no-repeat;
+  background-position: 20% 50%;
+  /* background-repeat: repeat (set by default); */
+  /* background-repeat: no-repeat; */
+  /* background-repeat: repeat-x;*/
+  /* background-repeat: repeat-y;*/
+  /* background-repeat: space; you'll have spaces between all the repeating pictures*/
+  /* background-repeat: round; */
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  /* background-size: cover; fills up the div in this case*/
+  /* background-size: contain; contain is like cover, but it keeps the ratio, if theres space repetition will occur*/
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  /* background-position: center OR bottom OR left OR right OR top OR LOOK BELOW THIS LINE; */
+  /*  background-position: 0 0 (default), or 20% 50% <<<< these are x axis and y axis*/
+  background-attachment: fixed;
+  /* ^ Theres also ^^^ scroll(I guess this is by default) and other stuffs */
+}

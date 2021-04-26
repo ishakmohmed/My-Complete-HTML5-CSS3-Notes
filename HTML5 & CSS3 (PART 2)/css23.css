@@ -1,0 +1,22 @@
+p::first-line {
+  font-size: 3rem;
+}
+/* ^^^ DAMNNNN, YOU CAN ALSO DO THIS, REMEMBER THAT! */
+p::first-letter {
+  font-weight: bolder;
+}
+/* ^^^ DAMMMNNN, YOU CAN ALSO DO THIS, REMEMBER THAT! */
+
+/* for below: for hover, its only 1 colon : */
+p:hover {
+  color: red;
+}
+
+.header:hover {
+  background: blue;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}

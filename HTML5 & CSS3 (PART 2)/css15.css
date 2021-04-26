@@ -1,0 +1,13 @@
+.banner {
+  border: 5px solid red;
+  padding: 10px;
+}
+.one {
+  float: right;
+}
+
+p {
+  clear: right;
+  /* I AM NOT EXACTLY SURE ABOUT THIS BUT WEIRD WAY TO REMEMBER: if picture is float right, &the text is clear right , the text respects the pic too much that it doesnt even take the left but creates a new line and vice versa... but... */
+  /* ... if picture is float right and you clear left (giving the text sorta false information that the pic is on left when it is clearly on right), the text gets mad and goes to left (the direction that you fake-cleared) */
+}

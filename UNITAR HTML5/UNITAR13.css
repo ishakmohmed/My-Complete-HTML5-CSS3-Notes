@@ -1,0 +1,47 @@
+.flex-container{
+  display: flex;
+  background-color: red;
+  justify-content: center;
+  justify-content: ;
+  align-items: ;
+  align-content: ;
+  flex-direction: ;
+  flex-wrap: ;
+  flex-grow: ;
+  flex-shrink: ;
+  flex-flow: ;
+}
+
+.sec1{
+  background-color: yellow;
+  margin: 20px;
+  flex-grow: 1;
+}
+
+.sec2{
+  background-color: lightblue;
+  margin: 20px;
+  flex-grow: 2;
+}
+.sec3{
+  background-color: pink;
+  margin: 20px;
+  flex-grow: 3;
+}
+.sec4{
+  background-color: green;
+  margin: 20px;
+  flex-shrink: 1;
+}
+.sec5{
+  background-color: purple;
+  margin: 20px;
+  flex-shrink: 2;
+}
+.sec6{
+  background-color: orangered;
+  margin: 20px;
+  flex-shrink: 3;
+}
+
+
